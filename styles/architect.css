@@ -82,48 +82,84 @@ main {
     margin: 70px auto;
     max-width: 1440px;
 }
-.teams-container{
+
+.teams-container {
     display: flex;
     align-items: center;
 }
-.teams-img-container{
+
+.teams-img-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 
 }
-.teams-content{
+
+.teams-content {
     padding-left: 70px;
     padding-right: 70px;
 }
-.teams-heading{
+
+.teams-heading {
     font-size: 45px;
 }
-.teams-heading .quick-list{
-    color:#727272 ;
+
+.teams-heading .quick-list {
+    color: #727272;
     font-weight: 500;
 
 }
-.teams-heading .text-feature{
+
+.teams-heading .text-feature {
     color: #FF900E;
     font-weight: 700;
 
 }
-.teams-description{
-    color:#727272 ;
+
+.teams-description {
+    color: #727272;
     font-size: 16px;
     font-weight: 400;
 
 }
-.text-lite-gray{
+
+.text-lite-gray {
     font-size: 16px;
     font-weight: 400;
-    color:  #727272;
+    color: #727272;
 }
-.section-title{
+
+.section-title {
     color: #131313;
     font-size: 45px;
     font-weight: 700;
+}
+.facts-card-container{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    
+}
+
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 20px;
+}
+.facts-card-container .card-state{
+    color: #424242 ;
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.facts-card-container .card-title{
+    color:#727272 ;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+
 }
 
 /* responsive styles */
@@ -132,13 +168,16 @@ main {
         padding: 10px;
     }
 
-    nav,.teams-container {
+    nav,
+    .teams-container {
         flex-direction: column;
     }
-    .teams-img-container{
+
+    .teams-img-container {
         grid-template-columns: 1fr;
     }
-    .teams-content{
+
+    .teams-content {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -152,7 +191,8 @@ main {
         padding: 20px;
     }
 
-    nav,.teams-container {
+    nav,
+    .teams-container {
         flex-direction: column;
     }
 }
