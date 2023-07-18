@@ -71,27 +71,65 @@ nav li a {
     font-size: 16px;
     font-weight: 400;
 }
-.banner img{
+
+.banner img {
     margin-top: 20px;
     width: 100%;
 }
+
+/* main style */
+main {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+
+}
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.teams-heading{
+    font-size: 45px;
+}
+.teams-heading .quick-list{
+    color:#727272 ;
+    font-weight: 500;
+
+}
+.teams-heading .text-feature{
+    color: #FF900E;
+    font-weight: 700;
+
+}
+
 /* responsive styles */
 @media screen and (max-width:576px) {
-    header{
+    header {
         padding: 10px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
-    
+
 }
+
 /* tablet or minimum devices */
 @media screen and (min-width:576px) and (max-width:960px) {
-    
-    header{
+
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
 }
